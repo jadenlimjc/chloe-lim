@@ -313,6 +313,8 @@ export default function HomePage() {
                   src="/cover-photo.png"
                   alt="Chloe Lim working with professional audio equipment"
                   className="w-full h-full object-cover"
+                  width={1000}
+                  height={1000}
                 />
               </div>
 

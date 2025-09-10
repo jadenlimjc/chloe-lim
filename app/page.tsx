@@ -283,10 +283,10 @@ export default function HomePage() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h2 className="font-sans text-5xl lg:text-6xl font-bold text-primary leading-tight">
-                  Hi! I'm Chloe.
+                  Hi! I&apos;m Chloe.
                 </h2>
                 <p className="font-sans text-xl text-muted-foreground leading-relaxed">
-                  I'm based in LA, Orange, and Singapore, and am a Chapman University graduate with a B.F.A. in Film Production and an emphasis in Sound Design.
+                  I&apos;m based in LA, Orange, and Singapore, and am a Chapman University graduate with a B.F.A. in Film Production and an emphasis in Sound Design.
                 </p>
               </div>
 
@@ -346,7 +346,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h3 className="font-sans text-4xl font-bold text-primary mb-6">What I Do</h3>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              I've worked on a variety of projects in different aspects of production and post-production. Today, I am open to work in production audio, boom operating, and post-sound! Please reach out to me for any inquiries and I look forward to meeting you :)
+              I&apos;ve worked on a variety of projects in different aspects of production and post-production. Today, I am open to work in production audio, boom operating, and post-sound! Please reach out to me for any inquiries and I look forward to meeting you :)
             </p>
           </div>
 
@@ -391,7 +391,7 @@ export default function HomePage() {
                   </div>
                   <h4 className="font-sans text-2xl font-bold text-card-foreground mb-4">Boom Operating</h4>
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                    I'm your boom op - making sure the mic is in the perfect spot to catch every word. I work seamlessly with your camera and lighting team to get the best audio possible.
+                    I&apos;m your boom op - making sure the mic is in the perfect spot to catch every word. I work seamlessly with your camera and lighting team to get the best audio possible.
                   </p>
 
                   <div className="space-y-3">
@@ -460,9 +460,9 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
                   1
                 </div>
-                <h5 className="font-semibold text-card-foreground mb-2">Let's Chat</h5>
+                <h5 className="font-semibold text-card-foreground mb-2">Let&apos;s Chat</h5>
                 <p className="text-sm text-muted-foreground">
-                  I get to know your project and what you're going for!
+                  I get to know your project and what you&apos;re going for!
                 </p>
               </div>
               <div className="text-center">
@@ -476,14 +476,14 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
                   3
                 </div>
-                <h5 className="font-semibold text-card-foreground mb-2">Let's Do This</h5>
+                <h5 className="font-semibold text-card-foreground mb-2">Let&apos;s Do This</h5>
                 <p className="text-sm text-muted-foreground">Time to get down to business - recording or post work.</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
                   4
                 </div>
-                <h5 className="font-semibold text-card-foreground mb-2">You're All Set</h5>
+                <h5 className="font-semibold text-card-foreground mb-2">You&apos;re All Set</h5>
                 <p className="text-sm text-muted-foreground">
                   I get your final files to you in the format you need, when you need them!
                 </p>
@@ -497,8 +497,8 @@ export default function HomePage() {
               <Quote className="w-8 h-8 text-accent/20 absolute top-4 left-4" />
               <div className="pt-4">
                 <p className="text-card-foreground leading-relaxed mb-6 italic">
-                  "Chloe's attention to detail and technical expertise elevated our film's audio beyond our
-                  expectations. Her professional approach and creative problem-solving made all the difference."
+                &quot;Chloe&apos;s attention to detail and technical expertise elevated our film&apos;s audio beyond our
+                  expectations. Her professional approach and creative problem-solving made all the difference.&quot;
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
@@ -521,8 +521,8 @@ export default function HomePage() {
               <Quote className="w-8 h-8 text-accent/20 absolute top-4 left-4" />
               <div className="pt-4">
                 <p className="text-card-foreground leading-relaxed mb-6 italic">
-                  "Working with Chloe was seamless from start to finish. Her post-production work transformed our raw
-                  footage into a polished, professional piece that exceeded client expectations."
+                &quot;Working with Chloe was seamless from start to finish. Her post-production work transformed our raw
+                  footage into a polished, professional piece that exceeded client expectations.&quot;
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
@@ -548,7 +548,7 @@ export default function HomePage() {
       <section id="portfolio" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h3 className="font-sans text-4xl font-bold text-primary mb-6">Some cool stuff I've worked on recently!</h3>
+            <h3 className="font-sans text-4xl font-bold text-primary mb-6">Some cool stuff I&apos;ve worked on recently!</h3>
           </div>
 
           {/* Featured Project 1*/}
@@ -727,7 +727,7 @@ export default function HomePage() {
       <section id="contact" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h3 className="font-sans text-4xl font-bold text-primary mb-6">Let's Make Something Awesome</h3>
+            <h3 className="font-sans text-4xl font-bold text-primary mb-6">Let&apos;s Make Something Awesome</h3>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">

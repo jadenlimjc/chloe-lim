@@ -21,6 +21,7 @@ import {
   Menu,
   X,
 } from "lucide-react"
+import Image from "next/image"
 
 export default function HomePage() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -308,7 +309,7 @@ export default function HomePage() {
               </div>
 
               <div className="aspect-square rounded-lg overflow-hidden bg-muted">
-                <img
+                <Image
                   src="/cover-photo.png"
                   alt="Chloe Lim working with professional audio equipment"
                   className="w-full h-full object-cover"

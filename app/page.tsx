@@ -558,7 +558,7 @@ export default function HomePage() {
                 <div className="relative group">
                   <div className="aspect-video bg-muted overflow-hidden">
                     <video
-                      src="/51_50.mp4"
+                      src="https://qxbtwqhhuiuf9zuu.public.blob.vercel-storage.com/51_50.mp4"
                       controls
                       playsInline
                       preload="metadata"
@@ -620,7 +620,7 @@ export default function HomePage() {
                 <div className="relative group">
                   <div className="aspect-video bg-muted overflow-hidden">
                     <video
-                      src="/Bone.mp4"
+                      src="https://qxbtwqhhuiuf9zuu.public.blob.vercel-storage.com/Bone.mp4"
                       controls
                       playsInline
                       preload="metadata"

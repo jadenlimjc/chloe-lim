@@ -158,13 +158,11 @@ export default function HomePage() {
         return timer
       }
 
-      const projectsTimer = animateNumber(setProjectsCount, 50)
-      const clientsTimer = animateNumber(setClientsCount, 25)
+      const projectsTimer = animateNumber(setProjectsCount, 30)
       const yearsTimer = animateNumber(setYearsCount, yearsExperience)
 
       return () => {
         clearInterval(projectsTimer)
-        clearInterval(clientsTimer)
         clearInterval(yearsTimer)
       }
     }
@@ -319,7 +317,7 @@ export default function HomePage() {
               </div>
 
               {/* Quick Stats */}
-              <div className="stats-section grid grid-cols-3 gap-6 pt-8">
+              <div className="stats-section grid grid-cols-2 gap-6 pt-8">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary">{projectsCount}+</div>
                   <div className="text-sm text-muted-foreground">Projects</div>
@@ -327,10 +325,6 @@ export default function HomePage() {
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary">{yearsCount}+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">{clientsCount}+</div>
-                  <div className="text-sm text-muted-foreground">Happy Clients</div>
                 </div>
               </div>
             </div>
@@ -354,13 +348,15 @@ export default function HomePage() {
           <Carousel className="mb-16" options={{ align: "start", loop: false }}>
             <CarouselContent>
               <CarouselItem>
-                <Card className="p-8 hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent">
+                <Card className="h-160 p-8 hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent">
                   <div className="p-4 bg-accent/10 rounded-full w-fit mb-6">
                     <Mic className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-sans text-2xl font-bold text-card-foreground mb-4">Production Sound Mixing</h4>
+                  <h4 className="font-sans text-2xl font-bold text-card-foreground mb-4">Production Sound Mixer</h4>
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                    I handle all the on-set audio recording and mixing to make sure every word comes through crystal clear. I capture all the ambient sounds that bring your story to life.
+                    I handle all on-set audio recording using both a shotgun and
+                    wireless microphone techniques. I adapt to the location and
+                    weather factors to ensure that the dialogue is as clean as possible.
                   </p>
 
                   <div className="space-y-3">
@@ -385,19 +381,22 @@ export default function HomePage() {
               </CarouselItem>
 
               <CarouselItem>
-                <Card className="p-8 hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent">
+                <Card className="h-160 p-8 hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent">
                   <div className="p-4 bg-accent/10 rounded-full w-fit mb-6">
                     <Volume2 className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-sans text-2xl font-bold text-card-foreground mb-4">Boom Operating</h4>
+                  <h4 className="font-sans text-2xl font-bold text-card-foreground mb-4">Boom Operater / Sound Utility</h4>
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                    I&apos;m your boom op - making sure the mic is in the perfect spot to catch every word. I work seamlessly with your camera and lighting team to get the best audio possible.
+                    I assist the production sound mixer and fill in the gaps where
+                    needed. I work with the camera team to ensure that I am getting the
+                    best sound possible without interfering with other aspects of the
+                    shoot.
                   </p>
 
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
-                      <span className="text-sm text-card-foreground">Precision microphone positioning</span>
+                      <span className="text-sm text-card-foreground">Precise microphone positioning</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
@@ -405,7 +404,7 @@ export default function HomePage() {
                     </div>
                     <div className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
-                      <span className="text-sm text-card-foreground">Challenging location expertise</span>
+                      <span className="text-sm text-card-foreground">Location expertise</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
@@ -415,14 +414,16 @@ export default function HomePage() {
                 </Card>
               </CarouselItem>
 
-              <CarouselItem>
-                <Card className="p-8 hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent">
+              <CarouselItem >
+                <Card className="h-160 p-8 hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent">
                   <div className="p-4 bg-accent/10 rounded-full w-fit mb-6">
                     <Headphones className="w-10 h-10 text-accent" />
                   </div>
                   <h4 className="font-sans text-2xl font-bold text-card-foreground mb-4">Post-Sound</h4>
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                    I take your raw recordings and turn them into something amazing. Editing, mixing, sound design - I do it all to make your audio sound pro and ready for broadcast.
+                    I work solo or collaborate with a team to create the final polished
+                    sound of a project. I am experienced in dialogue editing, foley, ADR,
+                    SFX, and re-recording mixing in stereo or 5.1
                   </p>
 
                   <div className="space-y-3">
@@ -440,16 +441,16 @@ export default function HomePage() {
                     </div>
                     <div className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
-                      <span className="text-sm text-card-foreground">Final mix delivery in all formats</span>
+                      <span className="text-sm text-card-foreground">Final mix delivery in stereo and 5.1</span>
                     </div>
                   </div>
                 </Card>
               </CarouselItem>
             </CarouselContent>
-                          <div className="mt-4 flex items-center justify-end gap-2">
-                <CarouselPrevious />
-                <CarouselNext />
-              </div>
+            <div className="mt-4 flex items-center justify-end gap-2">
+              <CarouselPrevious />
+              <CarouselNext />
+            </div>
           </Carousel>
 
           {/* Process Section */}
@@ -497,7 +498,7 @@ export default function HomePage() {
               <Quote className="w-8 h-8 text-accent/20 absolute top-4 left-4" />
               <div className="pt-4">
                 <p className="text-card-foreground leading-relaxed mb-6 italic">
-                &quot;Chloe&apos;s attention to detail and technical expertise elevated our film&apos;s audio beyond our
+                  &quot;Chloe&apos;s attention to detail and technical expertise elevated our film&apos;s audio beyond our
                   expectations. Her professional approach and creative problem-solving made all the difference.&quot;
                 </p>
                 <div className="flex items-center gap-4">
@@ -521,7 +522,7 @@ export default function HomePage() {
               <Quote className="w-8 h-8 text-accent/20 absolute top-4 left-4" />
               <div className="pt-4">
                 <p className="text-card-foreground leading-relaxed mb-6 italic">
-                &quot;Working with Chloe was seamless from start to finish. Her post-production work transformed our raw
+                  &quot;Working with Chloe was seamless from start to finish. Her post-production work transformed our raw
                   footage into a polished, professional piece that exceeded client expectations.&quot;
                 </p>
                 <div className="flex items-center gap-4">
@@ -570,12 +571,13 @@ export default function HomePage() {
                   <div className="space-y-6">
                     <div>
                       <h4 className="font-sans text-3xl font-bold text-card-foreground mb-3">51 50</h4>
-                      <p className="text-accent font-semibold mb-4">Independent Sci-Fi Feature Film</p>
+                      <p className="text-accent font-semibold mb-4">Dodge College Senior Thesis Project</p>
                       <p className="text-muted-foreground leading-relaxed">
-                        Complete audio post-production for this award-winning independent film. Designed immersive
-                        soundscapes for futuristic environments, created custom foley work, and mixed dialogue across
-                        challenging acoustic spaces. The project required innovative solutions for depicting advanced
-                        technology through sound.
+                        Project lead on sound from start to finish of the project, where I was
+                        challenged to bring life to the inner world of Blake, a young woman
+                        struggling with depression and suicidal thoughts. I designed
+                        immersive ambiences mixed in 5.1. to enhance the dark and moody
+                        themes of the film.
                       </p>
                     </div>
 
@@ -590,21 +592,22 @@ export default function HomePage() {
                       <div className="flex items-center gap-3">
                         <Award className="w-5 h-5 text-accent" />
                         <div>
-                          <div className="text-sm font-semibold text-card-foreground">Recognition</div>
-                          <div className="text-sm text-muted-foreground">Best Sound Design</div>
+                          <div className="text-sm font-semibold text-card-foreground">Role</div>
+                          <div className="text-sm text-muted-foreground">Production Sound Mixer and Sound Designer</div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 justify-center items-center">
                       <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm">
-                        Post-Production
+                        Production Sound Mixing
                       </span>
                       <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm">
-                        Sound Design
+                        Dialogue Editing
                       </span>
                       <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm">Foley</span>
-                      <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm">Final Mix</span>
+                      <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm">5.1.</span>
+                      <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm">ADR</span>
                     </div>
                   </div>
                 </div>
@@ -632,41 +635,41 @@ export default function HomePage() {
                   <div className="space-y-6">
                     <div>
                       <h4 className="font-sans text-3xl font-bold text-card-foreground mb-3">Bone</h4>
-                      <p className="text-accent font-semibold mb-4">Independent Sci-Fi Feature Film</p>
+                      <p className="text-accent font-semibold mb-4">Dodge College Advanced Production</p>
                       <p className="text-muted-foreground leading-relaxed">
-                        Complete audio post-production for this award-winning independent film. Designed immersive
-                        soundscapes for futuristic environments, created custom foley work, and mixed dialogue across
-                        challenging acoustic spaces. The project required innovative solutions for depicting advanced
-                        technology through sound.
+                        Enhanced the character of a freshman in high school named
+                        Georgie by creating a rich world of stimulating, exaggerated
+                        ambiences and worked with the composer to ensure compatibility
+                        between story and sound.
                       </p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-6">
-                      <div className="flex items-center gap-3">
+                    <div className="grid grid-cols-2 gap-6 ">
+                      <div className="flex items-center gap-3 ">
                         <Calendar className="w-5 h-5 text-accent" />
                         <div>
                           <div className="text-sm font-semibold text-card-foreground">Duration</div>
-                          <div className="text-sm text-muted-foreground">6 months</div>
+                          <div className="text-sm text-muted-foreground">4 months</div>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
                         <Award className="w-5 h-5 text-accent" />
                         <div>
-                          <div className="text-sm font-semibold text-card-foreground">Recognition</div>
-                          <div className="text-sm text-muted-foreground">Best Sound Design</div>
+                          <div className="text-sm font-semibold text-card-foreground">Role</div>
+                          <div className="text-sm text-muted-foreground">Sound Designer</div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 justify-center items-center">
                       <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm">
-                        Post-Production
+                        Dialogue Editing
                       </span>
                       <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm">
-                        Sound Design
+                        5.1.
                       </span>
                       <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm">Foley</span>
-                      <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm">Final Mix</span>
+                      <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm">Ambiences</span>
                     </div>
                   </div>
                 </div>
@@ -696,6 +699,10 @@ export default function HomePage() {
           <div className="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
             <Card className="p-8 hover:shadow-xl transition-all duration-300">
               <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-accent rounded-full"></div>
+                  <span className="text-card-foreground font-medium">Deity Microphones TC-1 Wireless Timecode Generator Box</span>
+                </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-accent rounded-full"></div>
                   <span className="text-card-foreground font-medium">Zoom F8n MultiTrack Field Recorder</span>
@@ -835,11 +842,11 @@ export default function HomePage() {
                       className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors"
                     >
                       <option value="">Select budget range</option>
-                      <option value="under-5k">Under $1,000</option>
-                      <option value="5k-15k">$1,000 - $3,000</option>
-                      <option value="15k-30k">$3,000 - $5,000</option>
-                      <option value="30k-50k">$5,000 - $10,000</option>
-                      <option value="over-50k">Over $10,000</option>
+                      <option value="under-5k">Under $300</option>
+                      <option value="5k-15k">$300 - $500</option>
+                      <option value="15k-30k">$500 - $1,000</option>
+                      <option value="30k-50k">$1,000 - $5,000</option>
+                      <option value="over-50k">Over $5,000</option>
                       <option value="discuss">Prefer to discuss</option>
                     </select>
                   </div>
@@ -946,19 +953,8 @@ export default function HomePage() {
                       <h5 className="font-semibold text-card-foreground mb-1">Email</h5>
                       <p className="text-muted-foreground">chloelim267@gmail.com</p>
                       <p className="text-sm text-muted-foreground mt-1">
-                        Perfect for project chats and detailed discussions
+                        For more detailed discussions! 
                       </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-accent/10 rounded-lg flex-shrink-0">
-                      <Phone className="w-6 h-6 text-accent" />
-                    </div>
-                    <div>
-                      <h5 className="font-semibold text-card-foreground mb-1">Phone</h5>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                      <p className="text-sm text-muted-foreground mt-1">For urgent stuff and quick chats</p>
                     </div>
                   </div>
 

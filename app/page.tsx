@@ -15,7 +15,6 @@ import {
   Award,
   Calendar,
   Mail,
-  Phone,
   MapPin,
   Send,
   Menu,
@@ -27,7 +26,6 @@ export default function HomePage() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const [statsVisible, setStatsVisible] = useState(false)
   const [projectsCount, setProjectsCount] = useState(0)
-  const [clientsCount, setClientsCount] = useState(0)
   const [yearsCount, setYearsCount] = useState(0)
   const [formData, setFormData] = useState({
     firstName: '',

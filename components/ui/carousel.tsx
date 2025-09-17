@@ -47,7 +47,7 @@ export function Carousel({ className, children, options, ...props }: React.HTMLA
         if (emblaApi) {
           emblaApi.scrollNext();
         }
-      }, 5000);
+      }, 10000);
 
     return (
         <CarouselContext.Provider value={[emblaRef, emblaApi]}>

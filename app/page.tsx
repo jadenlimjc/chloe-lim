@@ -491,21 +491,20 @@ export default function HomePage() {
           </div>
 
           {/* Testimonials */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8 relative">
+          <div className="grid md:grid-cols-1 gap-8 ">
+            <Card className="p-8 relative max-w-[600px] mx-auto">
               <Quote className="w-8 h-8 text-accent/20 absolute top-4 left-4" />
               <div className="pt-4">
                 <p className="text-card-foreground leading-relaxed mb-6 italic">
-                  &quot;Chloe&apos;s attention to detail and technical expertise elevated our film&apos;s audio beyond our
-                  expectations. Her professional approach and creative problem-solving made all the difference.&quot;
+                  &quot;Chloe worked as a sound mixer and designer on my junior and thesis film projects. She is dedicated to giving her best efforts and inspired me as a director to use sound as an element of storytelling. Anyone would be lucky to work with her!&quot;
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
                     <span className="font-semibold text-muted-foreground">MR</span>
                   </div>
                   <div>
-                    <div className="font-semibold text-card-foreground">Marcus Rodriguez</div>
-                    <div className="text-sm text-muted-foreground">Film Director</div>
+                    <div className="font-semibold text-card-foreground">Crislyn Zoe</div>
+                    <div className="text-sm text-muted-foreground">Director of 51/50</div>
                   </div>
                 </div>
                 <div className="flex gap-1 mt-3">
@@ -516,7 +515,7 @@ export default function HomePage() {
               </div>
             </Card>
 
-            <Card className="p-8 relative">
+            {/* <Card className="p-8 relative">
               <Quote className="w-8 h-8 text-accent/20 absolute top-4 left-4" />
               <div className="pt-4">
                 <p className="text-card-foreground leading-relaxed mb-6 italic">
@@ -538,7 +537,7 @@ export default function HomePage() {
                   ))}
                 </div>
               </div>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>
@@ -678,9 +677,14 @@ export default function HomePage() {
 
           {/* Call to Action */}
           <div className="text-center">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-accent hover:bg-accent/90 text-accent-foreground h-12 px-6"
+            >
               View My Full Portfolio Here!
-            </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -941,7 +945,7 @@ export default function HomePage() {
             {/* Contact Information */}
             <div className="space-y-8">
               <Card className="p-8">
-                <h4 className="font-sans text-2xl font-bold text-card-foreground mb-6">Get In Touch</h4>
+                <h4 className="font-sans text-2xl font-bold text-card-foreground mb-6">Get In Touch!</h4>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="p-3 bg-accent/10 rounded-lg flex-shrink-0">
@@ -951,7 +955,7 @@ export default function HomePage() {
                       <h5 className="font-semibold text-card-foreground mb-1">Email</h5>
                       <p className="text-muted-foreground">chloelim267@gmail.com</p>
                       <p className="text-sm text-muted-foreground mt-1">
-                        For more detailed discussions! 
+                        For more detailed discussions!
                       </p>
                     </div>
                   </div>

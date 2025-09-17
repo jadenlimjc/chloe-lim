@@ -567,7 +567,7 @@ export default function HomePage() {
                 <div className="p-8 lg:p-12 flex flex-col justify-center">
                   <div className="space-y-6">
                     <div>
-                      <h4 className="font-sans text-3xl font-bold text-card-foreground mb-3">51 50</h4>
+                      <h4 className="font-sans text-3xl font-bold text-card-foreground mb-3">51/50</h4>
                       <p className="text-accent font-semibold mb-4">Dodge College Senior Thesis Project</p>
                       <p className="text-muted-foreground leading-relaxed">
                         Project lead on sound from start to finish of the project, where I was

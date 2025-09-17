@@ -676,9 +676,17 @@ export default function HomePage() {
 
 
           {/* Call to Action */}
-          <div className="text-center">
+          <div className="text-center grid md:grid-cols-2 gap-8 max-w-[500px] mx-auto">
             <a
               href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-accent hover:bg-accent/90 text-accent-foreground h-12 px-6"
+            >
+              View My Resume Here!
+            </a>
+            <a
+              href="https://chllim.myportfolio.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-accent hover:bg-accent/90 text-accent-foreground h-12 px-6"
